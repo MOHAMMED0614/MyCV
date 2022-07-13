@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <title>log in</title>
+    <meta name="Store" content="Book Store">
+</head>
+<body>
+
+
+
+  <div>
+   <form>
+    <h1>Welcome Back!</h1>
+    <br>
+    <br>
+    <h2>Log In</h2>
+
+
+    
+    
+  
+    <input type="email" name="email" id="email" placeholder="Email" required >
+    <br>
+    <br>
+    <input type="password" name="password"  id="myInput" placeholder="Password" required >
+    <span class="eye" onclick="myFunction()"><i class="fa-solid fa-eye" id="hide1"></i><i class="fa-solid fa-eye-slash" id="hide2"></i></span>
+   
+
+    <br>
+    <br>
+
+
+    <button type="submit" class="sign">Log </button required>
+    <br>
+    <br>
+
+    <p>You don't have an account? <a href="indextest.html">Sign up </a></p>
+    <br>
+    <br>
+    <p>Follow Us</p>
+    <a href=""> <i class="fab fa-twitter" id="twit"></i></a>
+    <a href=""> <i class="fab fa-instagram" id="insta"></i></a>
+    <a href=""><i class="fab fa-facebook" id="fac"></i></a>
+
+   </form>
+  </div>
+
+  <script>
+    function myFunction(){
+      var x = document.getElementById("myInput");
+      var y = document.getElementById("hide1");
+      var z = document.getElementById("hide2");
+      if(x.type === 'password'){
+        x.type = "text";
+        y.style.display = "block";
+        z.style.display = "none";
+
+      }
+      else{
+        x.type = "password";
+        y.style.display = "none";
+        z.style.display = "block";
+
+      }
+      
+    }
+
+  </script>
+ 
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
